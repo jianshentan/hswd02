@@ -7,6 +7,10 @@ $secondary-color: #e67e22; /* orange */
 $secondary-color-muted: #d35400;
 $nav-bar-height: 80px;
 
+strong {
+    font-weight: 500;
+}
+
 body {
     font: 100% $font-stack;
     font-weight: 300;
@@ -44,23 +48,34 @@ input {
     padding: 0 20px;
 }
 
-.heading-1 {
+.heading_1 {
     font-size: 3.2em;
     line-height: 1.6em;
-    margin: 60 0 20 0;
+    padding: 60 0 20 0;
 }
 
-.heading-2 {
+.heading_2 {
     font-size: 2.2em;
     line-height: 1.2em;
-    margin: 40 0 20 0;
+    padding: 40 0 20 0;
 }
 
-.heading-3 {
+.heading_3 {
     font-size: 1.6em;
-    margin: 20 0 0 0;
+    padding: 0 0 20 0;
 }
 
+.heading_4 {
+    font-size: 1.2em;
+    padding: 0 0 20 0;
+}
+
+.right, .left {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 0px;
+}
 
 /* Nav */
 
@@ -143,10 +158,9 @@ input {
 
 #s_b .right,
 #s_b .left {
+    @extend .right;
     width: 470px;
-    height: 100%;
-    display: inline-block;
-    padding-top: 130px;
+    padding-top: 160px;
 }
 
 #s_b #button {
@@ -163,7 +177,7 @@ input {
 /* Section C */
 
 #s_c { 
-    height: 680px;
+    height: 750px;
     background-color: $secondary-color;
     color: white;
 }
@@ -194,22 +208,26 @@ input {
 /* Section D */
 
 #s_d {
-    height: 2000px;
     background-color: #eee;
+    padding-bottom: 20px;
 }
 
-#s_d .heading-1 {
+#s_d .content { 
+    padding-top: 40px; 
+}
+
+#s_d .title {
     color: $primary-color;
     text-align: center;
 }
 
-#s_d .content > .heading-3 {
+#s_d .content > .sub_title {
     color: $secondary-color-muted;   
     text-align: center;
 }
 
 .poll {
-    margin: 60 auto;
+    margin: 40 auto 60 auto;
     border: 2 solid #ddd;
     width: 720px;
     height: 800px;
@@ -217,19 +235,19 @@ input {
     padding: 40 60;
 }
 
-.poll .heading-3 {
+.poll .poll_title {
     color: $primary-color;
 }
 
 .tweet {
     @extend .poll;
-    height: 200px;    
+    height: 360px;    
     text-align: center;
 }
 
-.tweet .heading-3 {
-    text-align: center;
+.tweet .tweet_title {
     color: $primary-color;
+    text-align: center;
 }
 
 .tweet #button {
@@ -237,6 +255,24 @@ input {
     color: white;
     font-size: 1.4em;
     padding: 0 40px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+#footer {
+    height: 250px;
+    background-color: #666;
+    padding: 60px 0 0 0;
+    color: white;
+}
+
+.footer_element {
+    display: inline-block;
+    width: 315px;
+}
+
+.footer_element > div {
+    margin: 0 auto;
+    width: 120px;
 }
 
