@@ -1,0 +1,17 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "ejs": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-sass": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

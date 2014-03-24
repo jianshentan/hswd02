@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+/* teal */
+/* orange */
+body {
+  font: 100% Ubuntu, san-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0; }
+
+.section {
+  position: relative;
+  width: 100%; }
+
+.section_content, .section_background {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute; }
+
+.content {
+  margin: 0 auto;
+  width: 960px; }
+
+input {
+  font-family: Ubuntu, san-serif; }
+
+#button {
+  border: none;
+  height: 40px;
+  padding: 0 20px; }
+
+.heading-1 {
+  font-size: 3.2em;
+  line-height: 1.6em;
+  margin: 60 0 20 0; }
+
+.heading-2 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin: 40 0 20 0; }
+
+.heading-3 {
+  font-size: 1.6em;
+  margin: 20 0 0 0; }
+
+/* Nav */
+.nav {
+  z-index: 100;
+  width: 100%;
+  height: 80px;
+  background-color: white; }
+
+.nav_element {
+  display: inline-block;
+  width: 100px;
+  line-height: 80px; }
+
+#subscribe {
+  width: 400px;
+  float: right; }
+
+#subscribe > input {
+  display: inline-block;
+  height: 40px; }
+
+#subscribe > input[type="text"] {
+  border: 2px solid #16a085;
+  width: 200px;
+  padding: 10px; }
+
+#subscribe > input[type="text"]:focus {
+  outline-color: #1abc9c;
+  outline-offset: -2px;
+  outline-width: 5px; }
+
+#subscribe > input[type="submit"] {
+  background-color: #e67e22;
+  color: white;
+  margin-left: 20px; }
+
+/* Section A */
+#s_a {
+  height: 680px;
+  background-image: url("../media/banner_image.png");
+  background-position-y: -200; }
+
+#s_a > .section_background {
+  background-size: cover;
+  background-color: white;
+  opacity: 0.5; }
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 300px; }
+
+/* Section B */
+#s_b {
+  height: 680px;
+  background-color: #16a085;
+  color: white; }
+
+#s_b > .section_background {
+  background: linear-gradient(-30deg, transparent 50%, #1abc9c 50%); }
+
+#s_b .right, #s_b .left {
+  width: 470px;
+  height: 100%;
+  display: inline-block;
+  padding-top: 130px; }
+
+#s_b #button {
+  background-color: #e67e22;
+  font-size: 1.2em;
+  width: 120px;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 30px;
+  vertical-align: middle; }
+
+/* Section C */
+#s_c {
+  height: 680px;
+  background-color: #e67e22;
+  color: white; }
+
+#s_c > .section_background {
+  background: linear-gradient(30deg, transparent 50%, #d35400 50%); }
+
+#s_c .top {
+  text-align: center; }
+
+#s_c .top, #s_c .bottom {
+  padding-top: 40px; }
+
+#s_c .process {
+  display: inline-block;
+  width: 315px;
+  text-align: center; }
+
+#s_c .process_desc {
+  padding: 0 20; }
+
+/* Section D */
+#s_d {
+  height: 2000px;
+  background-color: #eee; }
+
+#s_d .heading-1 {
+  color: #1abc9c;
+  text-align: center; }
+
+#s_d .content > .heading-3 {
+  color: #d35400;
+  text-align: center; }
+
+.poll, .tweet {
+  margin: 60 auto;
+  border: 2 solid #ddd;
+  width: 720px;
+  height: 800px;
+  background-color: white;
+  padding: 40 60; }
+
+.poll .heading-3, .poll .tweet, .poll .tweet {
+  color: #1abc9c; }
+
+.tweet {
+  height: 200px;
+  text-align: center; }
+
+.tweet .heading-3 {
+  text-align: center;
+  color: #1abc9c; }
+
+.tweet #button {
+  background-color: #1abc9c;
+  color: white;
+  font-size: 1.4em;
+  padding: 0 40px;
+  margin-top: 10px; }
