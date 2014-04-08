@@ -2,13 +2,23 @@
 
 <html>
     <head>
-        <meta property="og:url" content="http://www.google.com" />
-        <meta property="og:title" content="" />
+        <meta property="og:url" content="http://www.genecoin.me" />
+        <meta property="og:title" content="Genecoin" />
         <meta property="og:image" content="" />
         <meta property="og:type" content="" />
-        <meta property="og:description" content="" />
-        <title></title>
+        <meta property="og:description" content="Become Bitcoin! Tweet to nominate a yourself or a friend." />
+        <title>Genecoin</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-49812029-1', 'genecoin.me');
+          ga('send', 'pageview');
+        </script>
     </head>
     <body>
         <div class="section" id="s_a">
@@ -85,34 +95,83 @@
             </div>
         </div>
 
-        <div class="section" id="s_d">
+        <!-- tweet buidler -->
+        <div class="section" id="s_d1">
             <div class="content">
                 <div class="heading_1 title">Do you deserve a spot?</div>
                 <div class="heading_4 sub_title">We are starting our pilot program of 25 individuals</div>
-                <div class="poll">
-                    <div class="heading_3 poll_title">Are you a fit candidate?</div>
-                </div>
-                <div class="tweet">
-                    <img src="media/twitter.png" width="150"><br><br>
-                    <div class="heading_3 tweet_title">Tell us what you think!</div>
-                    <div>
-                        Lorem ipsum, let us know if you're excited. Feel free to send <br>
-                        us any questions or comments.
+                <div class="">lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam a euismod justo, sed aliquam nisl. integer sit amet mattis lacus. nulla facilisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam a euismod justo, sed aliquam nisl. integer sit amet mattis lacus. nulla facilisi.</div>
+
+                <div class="tweet_builder">
+                    <div class="top">
+                        Tweet Builder
+                    </div>    
+                    <div class="bottom">
+                        <form>
+                            <div>This is the prompt we will as people to tweet about</div>
+                            <textarea class="tweet_content" name="tweet_content" placeholder="Enter Tweet..."></textarea>
+                            <div>Nominate yourself or your friend. <br>  (Don't forget, the tag is part of the 140 characters)</div>
+                            <div class="at_tag">@</div><!--
+                            --><input class="tweet_tag" type="text" name="tweet_tag" placeholder="therealobama"/>
+                            <div class="tweet_button_container">
+                                <div class="tweet_button">
+                                    Tweet
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
-                    <input id="button" type="button" value="Comment">
                 </div>
             </div>
         </div>
 
+        <!-- selected folks -->
+        <div class="section" id="s_d2">
+            <div class="content">
+                <div class="heading_2 title">Selected Candidates</div>
+                
+                <div class="owl_carousel">
+                    <div class="item active" id="c1"><img src="media/owl1.png" alt="Owl Image"></div>
+                    <div class="item" id="c2"><img src="media/twitter.png" alt="Owl Image"></div>
+                    <div class="item" id="c3"><img src="media/owl1.png" alt="Owl Image"></div>
+                    <div class="item" id="c4"><img src="media/owl1.png" alt="Owl Image"></div>
+                    <div class="item" id="c5"><img src="media/owl1.png" alt="Owl Image"></div>
+                    <div class="item" id="c6"><img src="media/owl1.png" alt="Owl Image"></div>
+                </div>
+
+                <br>
+
+                <div class="details">
+                    <img src="media/owl1.png" id="candidate_image" />
+                    <div class="candidate_details">
+                        <div class="heading_2" id="candidate_name">Betty Princeton</div>
+                        <div id="candidate_desc">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam a euismod justo, sed aliquam nisl. integer sit amet mattis lacus. nulla facilisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam a euismod justo, sed aliquam nisl. integer sit amet mattis lacus. nulla facilisi.
+                            <br><br>
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam a euismod justo, sed aliquam nisl. integer sit amet mattis lacus. nulla facilisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam a euismod justo, sed aliquam nisl. integer sit amet mattis lacus. nulla facilisi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- top tweets-->
+        <div class="section" id="s_d3">
+            <div class="content">
+                <div class="heading_4 sub_title">See what people have said</div>
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23yolf" data-widget-id="453567503973629952">Tweets about "#yolf"</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+
+
         <div class="section" id="footer">
             <div class="content">
                 <div class="footer_element">
-                    <div>
-                        <div class="heading_4"><strong>Contact</strong></div>
-                        <div> lorem 1 </div>
-                        <div> lorem 2 </div>
-                        <div> lorem 3 </div>
-                    </div>
+                    <div class="heading_4"><strong>Contact</strong></div>
+                    <div> lorem 1 </div>
+                    <div> lorem 2 </div>
+                    <div> lorem 3 </div>
                 </div>
                 <div class="footer_element">
                     <div class="heading_4"><strong>Contact</strong></div>
@@ -130,6 +189,8 @@
         </div>
 
         <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="js/index.js"></script>
+
     </body>
 </html>

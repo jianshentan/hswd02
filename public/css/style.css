@@ -62,13 +62,13 @@ input {
 .nav {
   z-index: 100;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: white; }
 
 .nav_element {
   display: inline-block;
   width: 100px;
-  line-height: 80px; }
+  line-height: 100px; }
 
 #subscribe {
   width: 400px;
@@ -160,47 +160,180 @@ input {
 #s_c .process_desc {
   padding: 0 20; }
 
-/* Section D */
-#s_d {
+/* Section D - tweet builder*/
+#s_d1, #s_d3 {
   background-color: #eee;
   padding-bottom: 20px; }
 
-#s_d .content {
+#s_d1 .content, #s_d1 #s_d3, #s_d1 #s_d3 {
   padding-top: 40px; }
 
-#s_d .title {
+#s_d1 .title, #s_d1 #s_d3, #s_d1 #s_d3 {
   color: #1abc9c;
   text-align: center; }
 
-#s_d .content > .sub_title {
+#s_d1 .content > .sub_title, #s_d1 .content > #s_d3, #s_d1 .content > #s_d3 {
   color: #d35400;
   text-align: center; }
 
-.poll, .tweet {
-  margin: 40 auto 60 auto;
-  border: 2 solid #ddd;
-  width: 720px;
-  height: 800px;
+.tweet_builder {
+  margin: 40px auto;
+  width: 500px;
   background-color: white;
-  padding: 40 60; }
+  color: #666; }
 
-.poll .poll_title, .poll .tweet, .poll .tweet {
-  color: #1abc9c; }
-
-.tweet {
-  height: 360px;
-  text-align: center; }
-
-.tweet .tweet_title {
-  color: #1abc9c;
-  text-align: center; }
-
-.tweet #button {
+.tweet_builder > .top {
   background-color: #1abc9c;
   color: white;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: 1.2em; }
+
+.tweet_builder > .bottom {
+  padding: 20px 20px; }
+
+.tweet_builder .tweet_content {
+  margin: 10px 0;
+  border: 2 solid #ccc;
+  height: 80px;
+  width: 100%;
+  resize: none;
+  font-family: Ubuntu, san-serif;
+  color: #777;
+  font-size: 1em; }
+
+.tweet_builder .tweet_content:focus {
+  outline-color: #666;
+  outline-offset: 0px;
+  outline-width: 0px; }
+
+.tweet_builder .at_tag {
+  margin: 10px 0;
+  height: 36px;
+  font-family: Ubuntu, san-serif;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  background-color: #ccc;
+  color: white;
+  line-height: 30px;
   font-size: 1.4em;
-  padding: 0 40px;
-  margin-top: 20px; }
+  width: 8%; }
+
+.tweet_builder .tweet_tag {
+  margin: 10px 0;
+  height: 36px;
+  font-family: Ubuntu, san-serif;
+  vertical-align: top;
+  display: inline-block;
+  border: 2 solid #ccc;
+  padding: 0 10px;
+  color: #777;
+  font-size: 1em;
+  width: 92%; }
+
+.tweet_builder .tweet_tag:focus {
+  outline-color: #999;
+  outline-offset: 0px;
+  outline-width: 0px; }
+
+.tweet_builder .tweet_button_container {
+  width: 100%;
+  text-align: center; }
+
+.tweet_builder .tweet_button_container > .tweet_button {
+  background-color: #1abc9c;
+  color: white;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 1.2em;
+  margin: 10 auto;
+  cursor: pointer;
+  text-decoration: none; }
+
+/* Selected Candidates */
+#s_d2 {
+  margin: 30px 0 80px 0; }
+
+
+#s_d2 .title {
+  color: #e67e22; }
+
+.owl_carousel .item {
+  cursor: pointer;
+  width: 204px;
+  height: 204px;
+  border-radius: 200px;
+  border: 4px solid white; }
+
+.owl_carousel .item .highlight {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 200px;
+  border: 4px solid #1abc9c;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px 3px #000;
+  font-size: 1.2em;
+  z-index: 10; }
+
+.owl_carousel .item img {
+  width: 200px;
+  border-radius: 200px;
+  border: 4px solid white;
+  position: absolute;
+  display: block;
+  background-color: #999; }
+
+.owl_carousel .owl-pagination {
+  text-align: center; }
+
+.owl_carousel .owl-page {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: #999;
+  border-radius: 8px;
+  margin: 10px; }
+
+.owl_carousel .owl-page.active {
+  background-color: #444 !important; }
+
+#s_d2 .details {
+  margin: 30px 0; }
+
+#s_d2 .details #candidate_image, #s_d2 .details .candidate_details {
+  display: inline-block;
+  vertical-align: top; }
+
+#s_d2 .details #candidate_image {
+  width: 300px;
+  height: 360px;
+  background-color: #999; }
+
+#s_d2 .details .candidate_details {
+  width: 620px;
+  margin-left: 30px; }
+
+#s_d2 .details #candidate_name {
+  padding: 0 0 40 0; }
+
+/* top tweets */
+#s_d3 {
+  padding: 60px 0; }
+
+#s_d3 .content {
+  text-align: center; }
+
+#s_d3 .content > .sub_title {
+  color: #d35400;
+  text-align: center; }
 
 /* Footer */
 #footer {
